@@ -3,11 +3,11 @@
 export default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-     // const trueorfalse = true;
+      // const trueorfalse = true;
       if (success) {
         const respdata = {
           status: '200',
-          body: 'Success'
+          body: 'Success',
         };
         resolve(respdata);
       } else {
