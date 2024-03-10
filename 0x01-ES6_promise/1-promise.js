@@ -1,5 +1,7 @@
 //  return a promise with a boolean parameter
 
+import { error } from "console";
+
 export default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -11,7 +13,7 @@ export default function getFullResponseFromAPI(success) {
         };
         resolve(respdata);
       } else {
-        reject('The fake API is not working currently');
+        reject(new Error('The fake API is not working currently'));
       }
     }, 2000);
   });
