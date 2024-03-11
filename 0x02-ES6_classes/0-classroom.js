@@ -14,6 +14,6 @@ export default class ClassRoom {
   // setter method to set the value of maxStudentsSize
   setmaxStudentsSize(newSize) {
     this._maxStudentsSize = newSize;
-    //return this._maxStudentsSize;
-}
+    // return this._maxStudentsSize;
+  }
 }
