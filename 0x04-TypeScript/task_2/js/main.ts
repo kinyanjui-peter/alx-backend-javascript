@@ -24,6 +24,7 @@ class Teacher implements TeacherInterface {
   getCoffeeBreak = () => 'Cannot have a break'
   workTeacherTasks = () => 'Getting to work'
 };
+
 // function to create employees
 function createEmployee(salary: number | string) {
   if (typeof salary === 'number'  && salary < 500) {
@@ -35,9 +36,25 @@ function createEmployee(salary: number | string) {
   }
 }
 
-const mrPeter = createEmployee(200);
-console.log(mrPeter);
-const mK = createEmployee(1000);
-console.log(mrPeter);
-const madl = createEmployee('$500');
-console.log(mrPeter);
+function isDirector(employee: any): employee is Director {
+  return employee instanceof Director;
+}
+
+// Define executeWork function
+function executeWork(employee: Director | Teacher) {
+  if (isDirector(employee)) {
+    console.log(employee.workDirectorTasks());
+  } else {
+    console.log(employee.workTeacherTasks());
+  }
+}
+// string literal
+let Subjects: 'Math' | 'History';
+
+//function
+function teachClass(todayClass:  'Math' | 'History'): string { 
+  if (todayClass === 'Math' || todayClass === 'History') {
+    return `Teaching ${todayClass}`;
+  }
+
+}
