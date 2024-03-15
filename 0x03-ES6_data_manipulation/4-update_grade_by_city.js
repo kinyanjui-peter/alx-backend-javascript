@@ -13,8 +13,8 @@ export default function updateStudentGradeByCity(getListStudents, city, newGrade
   const updatedstudent = filteredcity.map(student => ({...student, grade:newGrades}));
 
   updatedstudent.forEach(student => {
-    if (updatedstudent.student.grade === null) {
-      student.newGrades.grade = ('N/A')
+    if (updatedstudent.grade === null) {
+      student.grade = ('N/A')
   0      }})
   return updatedstudent;
 }
