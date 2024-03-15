@@ -6,3 +6,4 @@ export default function getStudentIdsSum(getListStudents) {
   }
   console.log(`${total}`)
 }
+
