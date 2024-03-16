@@ -1,11 +1,11 @@
 export default function taskBlock(trueOrFalse) {
-  let task = false;
-  let task2 = true;
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    (function() {
-      let task = true;
-      let task2 = false;
+    (() => { // Using arrow function syntax
+      const task = true;
+      const task2 = false;
     })();
   }
 
