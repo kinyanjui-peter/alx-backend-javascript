@@ -1,13 +1,13 @@
 export default function createEmployeesObject(departmentName, employees) {
   // check that departmentName is a string
-  if (typeof departmentName === String) {
+  if (typeof departmentName === 'string') {
     console.log('departmentName must be a string');
   }
   if (!Array.isArray(employees)) {
-    consoele.log('employee must be an array')
+    console.log('employee must be an array');
   }
   const department = {
-    [departmentName] : employees,
+    [departmentName]: employees,
   };
   // check that employee is a array
   return department;
