@@ -1,2 +1,3 @@
-const returnHowManyArguments = (...restParameter) => restParameter.length;
-export default returnHowManyArguments;
+export default function returnHowManyArguments(...theargs) {
+  return theargs.length;
+}
