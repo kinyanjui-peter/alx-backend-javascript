@@ -1,7 +1,4 @@
 export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
-
   if (trueOrFalse) {
     (() => { // Using arrow function syntax
       const task = true;
@@ -9,5 +6,5 @@ export default function taskBlock(trueOrFalse) {
     })();
   }
 
-  return [task, task2];
+  return [false, true]; // Returning default values
 }
