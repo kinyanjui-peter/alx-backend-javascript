@@ -1,7 +1,9 @@
 //  return a promise with a boolean parameter
 
 export default async function getFullResponseFromAPI(success) {
+  console.log('Inside getFullResponseFromAPI function');
   return new Promise((resolve, reject) => {
+    console.log('Inside setTimeout');
     setTimeout(() => {
       // const trueorfalse = true;
       if (success) {
